@@ -1,0 +1,32 @@
+/*-------------------------------------------(style[sitil] bölümü)-------------------------------------------*/
+
+body{
+    background-color: black;
+    color: lightblue;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 18px;
+}
+
+a{
+    color: lightgreen;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+nav > img{
+    width: auto;
+    height: 120px;
+}
+
+img{
+    width: auto;
+    height: 70px;
+}
