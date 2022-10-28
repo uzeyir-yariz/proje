@@ -1,4 +1,5 @@
 /****************************|(layout bölümü)|****************************/
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -26,8 +27,44 @@ nav{
     padding-top: 1rem;
 }
 
+/*------------------------------(main bölümü)------------------------------*/
+
+/*first section*/
+
+.first-section{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.first-section > article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vw;
+    
+}
+
+.first-section > article > h2{
+    font-size: 60px;
+    color: lightslategray;
+    
+}
+
+.first-section > article > p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.first-section > article > hr{
+    width: 10rem;
+    height: 5px;
+    margin-top: 30px;
+    background-color: lightslategray;
+
+}
+
 
 /****************************|(style bölümü)|****************************/
+
 a,a:link{
     color: azure;
     text-decoration: none;
@@ -44,7 +81,7 @@ nav > ul > li{
     margin-left: 1rem;    
 }
 
-hr{
+header > hr{
     margin-top: 1rem;
     opacity: 30%;
 }
