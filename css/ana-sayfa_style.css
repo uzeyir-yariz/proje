@@ -5,4 +5,46 @@
     margin: 0%;
 }
 
+body{
+    height: 80vh;
+}
+
 /*------------------------------(header bölümü)------------------------------*/
+
+header{
+    background-image: url(../images/truck.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+
+/****************************|(style bölümü)|****************************/
+a,a:link{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav > ul > li{
+    float: left;
+    margin-right: 1rem;    
+    margin-left: 1rem;    
+}
+
+hr{
+    margin-top: 1rem;
+    opacity: 30%;
+}
