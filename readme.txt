@@ -2,7 +2,7 @@
 
 proje durumu{
     figma taslağı : 100%
-    şemantik/layout : 60%
+    şemantik/layout : 0%
     style: 0%
     içerik: 0%
 
@@ -10,5 +10,5 @@ proje durumu{
 
     }
 
-    proje == 25%
+    proje == 15%
 }
