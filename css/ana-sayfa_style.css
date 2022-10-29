@@ -62,6 +62,33 @@ nav{
 
 }
 
+/*second section (this is realy hard)*/
+
+.second-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.up{
+    font-size: 40px;
+    color: lightslategray;
+}
+
+.up{
+    display:  flex;
+    margin: auto;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.second-section > article > p{
+    font-size: 20px;
+}
+
+
+
+
 
 /****************************|(style bölümü)|****************************/
 
