@@ -1,3 +1,10 @@
+
+
+
+
+
+
+/*
 function openCity(cityName) {
     var i;
     var x = document.getElementsByClassName("city");
@@ -5,4 +12,5 @@ function openCity(cityName) {
       x[i].style.display = "none";  
     }
     document.getElementById(cityName).style.display = "block";  
-  }
+}
+*/

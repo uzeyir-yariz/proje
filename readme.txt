@@ -1,4 +1,4 @@
-
+proje devam etmektedir devamı gelmektedir 
 
 proje durumu{
     figma taslağı : 100%

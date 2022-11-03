@@ -72,23 +72,14 @@ nav{
     flex-direction: column;
 }
 
-.up{
-    font-size: 40px;
-    color: lightslategray;
-}
 
-.up{
-    display:  flex;
-    margin: auto;
-    align-items: center;
-    margin-top: 2rem;
-    flex-direction: column;
-}
 
-.second-section > article > p{
-    font-size: 20px;
-}
 
+
+
+
+
+/*
 .btn > button{
     font-size: 15px;
     padding: 10px;
@@ -108,17 +99,7 @@ nav{
     opacity: 50%;
     cursor: pointer;
 }
-
- #denizyolu{
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    flex-direction: row;
-}
-
-
+*/
 
 
 
