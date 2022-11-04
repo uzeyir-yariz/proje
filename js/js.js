@@ -4,5 +4,6 @@ function openCity(yolName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  document.getElementById(yolName).style.display = "block";
+  document.getElementById(yolName).style = "";
+  
 }

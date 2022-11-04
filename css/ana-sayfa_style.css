@@ -13,7 +13,7 @@ body{
 /*------------------------------(header bölümü)------------------------------*/
 
 header{
-    background-image: url(../images/truck.jpg);
+    background-image: url(../images/tır.jpg);
     background-position: center;
     background-size: cover;
     height: 60vw;
@@ -79,10 +79,70 @@ nav{
 }
 
 
+/*js*/
+#karayolu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
+#karayolu > article,
+#karayolu > figure{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
 
+#havayolu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
+#havayolu > article,
+#havayolu > figure{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
 
+#denizyolu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#denizyolu > article,
+#denizyolu > figure{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#demiryolu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#demiryolu > article,
+#demiryolu > figure{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.second-section > .conter > figure > img{
+    max-width: 690px;
+    min-width: 600;
+    width: auto;
+    height: 400px;
+    border-radius: 5px;
+}
 
 .btn{
     font-size: 15px;
@@ -105,8 +165,6 @@ nav{
     opacity: 50%;
     cursor: pointer;
 }
-
-
 
 
 /****************************|(style bölümü)|****************************/
