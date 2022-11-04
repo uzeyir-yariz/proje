@@ -36,12 +36,40 @@
         </section>
 
         <section class="second-section">
-            <div class="scond-section_header">
+
+            <div class="conter">
                 <h2>Hizmetler</h2>
-                <span id="karayolu">Karayolu</span>
-                <span>havayolu</span>
-                <span>denizyolu</span>
             </div>
+              
+            <div class="black">
+                <button class="btn" onclick="openCity('karayolu')">karayolu taşımacılığı</button>
+                <button class="btn" onclick="openCity('havayolu')">havayolu taşımacılığı</button>
+                <button class="btn" onclick="openCity('denizyolu')">denizyolu taşımacılığı</button>
+                <button class="btn" onclick="openCity('demiryolu')">demiryolu taşımacılığı</button>
+            </div>
+              
+            <div id="karayolu" class="conter yol">
+                <article>
+                    <h2>karayolu</h2>
+                    <p></p>
+                </article>
+            </div>
+              
+            <div id="havayolu" class="conter yol" style="display:none">
+                <h2>havayolu</h2>
+                <p></p> 
+            </div>
+              
+            <div id="denizyolu" class="conter yol" style="display:none">
+                <h2>denizyolu</h2>
+                <p></p>
+            </div>
+
+            <div id="demiryolu" class="conter yol" style="display:none">
+                <h2>demiryolu</h2>
+                <p></p>
+            </div>
+
         </section>
     </main>
 
