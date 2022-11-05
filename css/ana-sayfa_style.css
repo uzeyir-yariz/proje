@@ -8,6 +8,10 @@
 
 body{
     height: 80vh;
+    background-image: url(../images/ikitelli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*------------------------------(header bölümü)------------------------------*/
@@ -37,6 +41,9 @@ nav{
     align-items: center;
     padding-left: 10rem;
     padding-right: 10rem;
+    background-color: rgb(49, 49, 49);
+    color: azure;
+    padding-bottom: 2rem;
 }
 
 .first-section > article{
@@ -68,10 +75,12 @@ nav{
 /*second section (this is realy hard)*/
 
 .second-section{
-    margin-top: 8rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(49, 49, 49, 0.897);
+    color: azure;
 }
 
 .conter > h2{
@@ -82,7 +91,7 @@ nav{
 /*js*/
 #karayolu{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -167,7 +176,7 @@ nav{
 }
 
 
-/****************************|(style bölümü)|****************************/
+/****************************|()|****************************/
 
 a,a:link{
     color: azure;
