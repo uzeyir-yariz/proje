@@ -1,3 +1,3 @@
-# version 0.4
+# ver 0.5
 
 proje devam etmektedir devamı gelmektedir.

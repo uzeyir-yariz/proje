@@ -245,29 +245,48 @@ header > hr{
 
 /*fourth  section*/
 
+/*üst kısım*/
 .fourth{
     display: flex;
     flex-direction: column;
+    background-color: #313131;
+    color: white;
+    padding: 1rem 0rem 1rem 0rem;
 }
 
 .fourth > article{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
+.fourth > article > hr{width: 150px; height: 4px; background-color: orange; border-color: orange;}
+.fourth > article > h3{margin: 0.5rem; font-size: 60px;}
+.fourth > article > p {display: flex; margin: 0.5rem; text-align: center; max-width: 900px; min-width: 600px;}
 
-.fourth > .images{
+/*alt kısım*/
+.fourth > .imges{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
 }
 
-.fourth > .images > figure{
+.fourth > .imges > figure{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 1rem;
 }
 
-.fourth > .images > figure > article{
+.fourth > .imges > figure > article{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
+.fourth > .imges > figure > article > h5{font-size: 20px; margin-bottom: 0.5rem;}
 
 
 /****************************|()|****************************/
