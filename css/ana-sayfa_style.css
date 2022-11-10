@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /****************************|(layout bölümü)|****************************/
+
+a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase;}
+p{font-family: 'Quicksand', sans-serif;}
+
 
 *{
     box-sizing: border-box;
@@ -36,6 +42,8 @@ a,a:link{
     text-decoration: none;
     font-size: 20px;
 }
+
+nav > a > img{height: auto; width: 100px;}
 
 ul{
     list-style: none;
@@ -100,8 +108,10 @@ header > hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(49, 49, 49, 0.897);
+    /*background-color: rgba(49, 49, 49, 0.904);*/
+    background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.836));
     color: azure;
+    padding-bottom: 4rem;
 }
 
 .conter > h2{
@@ -200,10 +210,11 @@ header > hr{
 
 .third{
     display: flex;
-    justify-content: space-around;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: 20px;
+    flex-wrap: wrap;
+    margin-left: 5rem; margin-right: 5rem;
+    gap: 5rem;
 }
 
 .third > article{
@@ -211,11 +222,23 @@ header > hr{
     flex-direction: column;
     text-align: center;
     border: 2px orange solid;
+    flex: 1;
+}
+
+.third > article > h4 > .icon{
+    display: flex;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
 }
 
 .third > article > h4{
+    display: flex;
     background-color: rgba(49, 49, 49, 0.897);
-    
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem;
 }
 
@@ -249,9 +272,9 @@ header > hr{
 .fourth{
     display: flex;
     flex-direction: column;
-    background-color: #313131;
+    background-image: linear-gradient(rgba(49, 49, 49, 0.788), rgb(49, 49, 49)75%);
     color: white;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 4rem 0rem 1rem 0rem;
 }
 
 .fourth > article{
@@ -263,7 +286,7 @@ header > hr{
 }
 .fourth > article > hr{width: 150px; height: 4px; background-color: orange; border-color: orange;}
 .fourth > article > h3{margin: 0.5rem; font-size: 60px;}
-.fourth > article > p {display: flex; margin: 0.5rem; text-align: center; max-width: 900px; min-width: 600px;}
+.fourth > article > p {display: flex; margin: 1rem 4rem 0rem 4rem; text-align: center;}
 
 /*alt kısım*/
 .fourth > .imges{
@@ -271,13 +294,24 @@ header > hr{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 1.5rem;
+    flex-wrap: wrap;
+
 }
 
 .fourth > .imges > figure{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     margin: 1rem;
+}
+
+.fourth > .imges > figure > a > img{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 .fourth > .imges > figure > article{
@@ -285,8 +319,10 @@ header > hr{
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 19rem;
 }
 .fourth > .imges > figure > article > h5{font-size: 20px; margin-bottom: 0.5rem;}
+
 
 
 /****************************|()|****************************/
