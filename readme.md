@@ -16,8 +16,8 @@ proje, halen devam etmektedir.
 - fourth 3 resim eklendi 
 - yumuşak renk geçişleri uygulandı 
 - iki yeni yazı fontu eklendi :
-  - paragraflar **Quicksand**
   - başlıklar **Open Sans**
+  - paragraflar **Quicksand**
 - section fourth css geliştirildi
 
 #
