@@ -3,7 +3,9 @@ proje, halen devam etmektedir.
 
 ### proje ver 0.6 beta
 
-- ...
+- section  fifth eklendi
+- article içine içerik eklendi + css yazıldı (üsten kodlar kopyalandı)
+
 
 ## proje ver 0.6
 

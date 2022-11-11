@@ -322,6 +322,30 @@ header > hr{
 }
 .fourth > .imges > figure > article > h5{font-size: 20px; margin-bottom: 0.5rem;}
 
+/*fifth section*/
+
+/*üst kısım*/
+.fifth{
+    display: flex;
+    flex-direction: column;
+    background:rgb(49, 49, 49);
+    color: white;
+    padding: 4rem 0rem 1rem 0rem;
+}
+
+.fifth > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.fifth > article > hr{width: 150px; height: 4px; background-color: orange; border-color: orange;}
+.fifth > article > h3{margin: 0.5rem; font-size: 35px;}
+.fifth > article > p {display: flex; margin: 1rem 4rem 0rem 4rem; text-align: center;}
+
+/*alt kısım*/
+
 
 
 /****************************|()|****************************/
