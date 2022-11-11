@@ -13,7 +13,6 @@ p{font-family: 'Quicksand', sans-serif;}
 }
 
 body{
-    height: 80vh;
     background-image: url(../images/komyonlar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +25,7 @@ header{
     background-image: url(../images/tır.jpg);
     background-position: center;
     background-size: cover;
-    height: 60vw;
+    height: 80vh;
 }
 
 nav{
@@ -78,7 +77,7 @@ header > hr{
 .first-section > article{
     display: flex;
     flex-direction: column;
-    margin-top: 10vw;
+    margin-top: 5rem;
     align-items: center;    
 }
 
