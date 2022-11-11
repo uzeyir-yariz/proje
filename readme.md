@@ -1,6 +1,12 @@
 # PROJE
 proje, halen devam etmektedir.
 
+### proje ver 0.6 beta
+
+- ...
+
+## proje ver 0.6
+
 ### proje ver 0.5 release 
 
 - third section uyum sağlandı 
@@ -10,9 +16,11 @@ proje, halen devam etmektedir.
 - fourth 3 resim eklendi 
 - yumuşak renk geçişleri uygulandı 
 - iki yeni yazı fontu eklendi :
-- - paragraflar **Quicksand**
-- - başlıklar **Open Sans**
+  - paragraflar **Quicksand**
+  - başlıklar **Open Sans**
 - section fourth css geliştirildi
+
+#
 
 ### proje ver 0.5 beta
 
