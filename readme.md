@@ -3,9 +3,12 @@ proje, halen devam etmektedir.
 
 ### proje ver 0.6 beta
 
-- section  fifth eklendi
+- bir takım düzeltmeler 
+- section fifth mobil uyumlu hale getirildi 
+- yorum kısmı eklendi (kulanılamaz !)
+- section fifth eklendi
 - article içine içerik eklendi + css yazıldı (üsten kodlar kopyalandı)
-
+- test test 
 
 ## proje ver 0.6
 
