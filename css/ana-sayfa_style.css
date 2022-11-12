@@ -354,12 +354,13 @@ header > hr{
 
 .yorum{
     display: flex;
-    background-color: gray;
+    background-color: rgb(65, 65, 65);
     flex-direction: column;
     flex: 0 1 550px;
     gap: 1rem;
     padding: 1rem;
     border-radius: 15px;
+    box-shadow: 2px 2px;
 }
 
 .yorum > div{
@@ -380,6 +381,6 @@ header > hr{
     gap: 0.2rem;
 }
 .yorum > div > .isim > h5{font-size: 25px;}
-.yorum > div > .isim > hr{height: 5px; background-color: white;}
+.yorum > div > .isim > hr{height: 5px; background-color: black; border-color: black;}
 
 /****************************|()|****************************/
