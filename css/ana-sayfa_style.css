@@ -30,8 +30,9 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem 3rem 0rem 3rem;
+  flex-direction: row;
     align-items: center;
     padding-top: 1rem;
 }
@@ -42,7 +43,7 @@ a,a:link{
     font-size: 20px;
 }
 
-nav > a > img{height: auto; width: 100px;}
+nav > a > img{height: 100%; width: 30%;}
 
 ul{
     list-style: none;
