@@ -30,9 +30,8 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-between;
-    margin: 0rem 3rem 0rem 3rem;
-  flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     padding-top: 1rem;
 }
@@ -43,7 +42,7 @@ a,a:link{
     font-size: 20px;
 }
 
-nav > a > img{height: 100%; width: 30%;}
+nav > a > img{height: auto; width: 100px;}
 
 ul{
     list-style: none;
@@ -112,27 +111,22 @@ header > hr{
     background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.836));
     color: azure;
     padding-bottom: 4rem;
+    justify-content: center;
 }
 
-.conter > h2{
-    font-size: 60px;
-}
+.conter{display: flex; justify-content: center; align-items: center; gap: 7rem;}
+.conter > h2{font-size: 5rem;}
+
 
 
 /*js*/
 #karayolu{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: nowrap;
 }
 
-#karayolu > article,
-#karayolu > figure{
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
 
 #havayolu{
     display: flex;
@@ -142,11 +136,6 @@ header > hr{
     flex-wrap: nowrap;
 }
 
-#havayolu > article,
-#havayolu > figure{
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
 
 #denizyolu{
     display: flex;
@@ -156,11 +145,7 @@ header > hr{
     flex-wrap: nowrap;
 }
 
-#denizyolu > article,
-#denizyolu > figure{
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
+
 
 #demiryolu{
     display: flex;
@@ -170,18 +155,17 @@ header > hr{
     flex-wrap: nowrap;
 }
 
-#demiryolu > article,
-#demiryolu > figure{
-    margin-left: 5rem;
-    margin-right: 5rem;
+
+.second-section > .conter > img{
+    height: auto;
+    width: 50%;
 }
 
-.second-section > .conter > figure > img{
-    max-width: 690px;
-    min-width: 600;
-    width: auto;
-    height: 400px;
-    border-radius: 5px;
+.black{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
@@ -197,7 +181,7 @@ header > hr{
 }
 
 .btn:focus{
-    background-color: darkorange;
+    background-color: rgb(5, 5, 5);
     color: azure;
 }
 
@@ -221,7 +205,7 @@ header > hr{
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 2px orange solid;
+    border: 3px rgb(0, 0, 0) solid;
     flex: 1;
 }
 
@@ -244,13 +228,9 @@ header > hr{
 
 .third > article > p{
     color: azure;
-    background-color: orange;
+    background-color: rgb(104, 101, 95);
     padding: 0.5rem;
-    border-top: 3px orange; 
-    border-right: 0px; 
-    border-bottom: 0px;
-    border-left: 0px;
-
+    border-top: 3px rgb(121, 172, 120) solid;
     /*
         first: top
         second: right

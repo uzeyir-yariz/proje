@@ -1,14 +1,19 @@
 # PROJE
 proje, halen devam etmektedir.
 
+### proje ver 0.6 release
+
+- logo değiştirildi 
+- bazı hatalar düzeltildi
+- section second mobil uyumlulu hale getirildi 
+- bir takım düzeltmeler 
+
 ### proje ver 0.6 beta
 
-- bir takım düzeltmeler 
 - section fifth mobil uyumlu hale getirildi 
 - yorum kısmı eklendi (kulanılamaz !)
 - section fifth eklendi
 - article içine içerik eklendi + css yazıldı (üsten kodlar kopyalandı)
-- test test 
 
 ## proje ver 0.6
 
