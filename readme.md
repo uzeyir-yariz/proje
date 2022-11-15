@@ -13,8 +13,6 @@
 
 ## proje ver 0.7
 
-#
-
 ### proje ver 0.6 release
 
 - logo değiştirildi 
@@ -30,8 +28,6 @@
 - article içine içerik eklendi + css yazıldı (üsten kodlar kopyalandı)
 
 ## proje ver 0.6
-
-#
 
 ### proje ver 0.5 release 
 
