@@ -1,5 +1,19 @@
 # PROJE
-proje, halen devam etmektedir.
+**proje, halen devam etmektedir.**
+
+### proje ver 0.7 beta
+
+- _css 450 kod satırına çıktık ! ! !_
+- bağlantılar (sosyal/sayfa ağları) üstünde çalışmalar başladı _20% tamamlandı_
+- 6 yeni icon eklendi
+- div css yazıldı 
+- footer > div içerik eklendi 
+- footer layout çıkarıldı css eklendi
+- footer eklendi
+
+## proje ver 0.7
+
+#
 
 ### proje ver 0.6 release
 
@@ -17,6 +31,8 @@ proje, halen devam etmektedir.
 
 ## proje ver 0.6
 
+#
+
 ### proje ver 0.5 release 
 
 - third section uyum sağlandı 
@@ -29,8 +45,6 @@ proje, halen devam etmektedir.
   - başlıklar **Open Sans**
   - paragraflar **Quicksand**
 - section fourth css geliştirildi
-
-#
 
 ### proje ver 0.5 beta
 
