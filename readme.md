@@ -19,7 +19,7 @@
 
 - logo değiştirildi 
 - bazı hatalar düzeltildi
-- section second mobil uyumlulu hale getirildi 
+- section second mobile uyumlu hale getirildi 
 - bir takım düzeltmeler 
 
 ### proje ver 0.6 beta
