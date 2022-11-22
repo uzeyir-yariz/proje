@@ -369,7 +369,7 @@ header > hr{
 footer{
     display: flex;
     flex-direction: column;
-    background-color: rgba(49, 49, 49, 0.897);
+    background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.788));
     padding-top: 2rem;
     
 }

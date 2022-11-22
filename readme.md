@@ -3,6 +3,7 @@
 
 ### proje ver 0.7 beta
 
+- _küçük değişiklikler_
 - _css 450 kod satırına çıktık ! ! !_
 - bağlantılar (sosyal/sayfa ağları) üstünde çalışmalar başladı _20% tamamlandı_
 - 6 yeni icon eklendi
