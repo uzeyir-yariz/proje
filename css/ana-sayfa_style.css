@@ -101,7 +101,7 @@ header > hr{
 
 }
 
-/*second section (this is realy hard)*/
+/*second section (bu gerçekten zor)*/
 
 .second-section{
     padding-top: 2rem;
@@ -124,7 +124,7 @@ header > hr{
 #karayolu{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
 }
 
