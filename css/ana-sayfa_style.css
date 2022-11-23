@@ -115,7 +115,7 @@ header > hr{
     justify-content: center;
 }
 
-.conter{display: flex; justify-content: center; align-items: center; gap: 7rem;}
+.conter{display: flex; justify-content: center; align-items: center;}
 .conter > h2{font-size: 5rem;}
 
 
@@ -124,8 +124,9 @@ header > hr{
 #karayolu{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
+    font-size: 19px;
 }
 
 
@@ -135,6 +136,8 @@ header > hr{
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-size: 19px;
+  
 }
 
 
@@ -144,6 +147,8 @@ header > hr{
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-size: 19px;
+  
 }
 
 
@@ -154,6 +159,7 @@ header > hr{
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-size: 19px;
 }
 
 
