@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-/****************************|(layout bölümü)|****************************/
 
 #bug{color: red; text-decoration: overline;}
 a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase;}
@@ -14,7 +13,7 @@ p{font-family: 'Quicksand', sans-serif;}
 }
 
 body{
-    background-image: url(../images/komyonlar.jpg);
+    background-image: url(images/komyonlar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -23,7 +22,7 @@ body{
 /*------------------------------(header bölümü)------------------------------*/
 
 header{
-    background-image: url(../images/tır.jpg);
+    background-image: url(images/tır.jpg);
     background-position: center;
     background-size: cover;
     height: 80vh;
