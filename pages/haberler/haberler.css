@@ -194,3 +194,4 @@ footer > .second > .second{
 footer > .second > .second > div > a > img{width: 2.5rem; height: 2.5rem; margin: 0rem 0.5rem 0rem 0.5rem;}
 footer > .second > .second > p{font-size: 16px;}
 footer > .second > .second > p > a{font-size: 20px; color: chartreuse;}
+footer > *{color: azure;}

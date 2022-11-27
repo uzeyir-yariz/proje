@@ -1,6 +1,23 @@
 # PROJE
 **proje, halen devam etmektedir.**
 
+### proje ver 0.8 beta
+
+- haberler içerik eklendi
+- - main bölümü layout çıkartıldı
+- - header & footer eklendi
+- proje eklendi sayfa _boş_
+- - iletişim sayfası eklendi
+- - haberler sayfası eklendi
+- - hakkımızda sayfası eklendi 
+- - galeri sayfası eklendi 
+
+## proje ver 0.8
+
+### proje ver 0.7 release
+
+- _küçük değişiklikler_
+
 ### proje ver 0.7 beta
 
 - _küçük değişiklikler_
