@@ -3,8 +3,10 @@
 
 ### proje ver 0.8 beta
 
+- hakkımızda içerik eklendi
 - haberler içerik eklendi
 - - main bölümü layout çıkartıldı
+- - resimler eklendi 
 - - header & footer eklendi
 - proje eklendi sayfa _boş_
 - - iletişim sayfası eklendi
@@ -22,7 +24,6 @@
 
 - _küçük değişiklikler_
 - _css 450 kod satırına çıktık ! ! !_
-- bağlantılar (sosyal/sayfa ağları) üstünde çalışmalar başladı _20% tamamlandı_
 - 6 yeni icon eklendi
 - div css yazıldı 
 - footer > div içerik eklendi 
