@@ -34,6 +34,8 @@ nav{
     flex-direction: row;
     align-items: center;
     padding-top: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 a,a:link{
