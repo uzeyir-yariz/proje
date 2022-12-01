@@ -3,11 +3,10 @@
 
 ### proje ver 0.8 beta
 
-- hakkımızda içerik eklendi
+- galeri içerik eklendi
+- haberler eklendi içerikler eklendi
+- hakkımızda kısmı eklendi içerik eklendi
 - haberler içerik eklendi
-- - main bölümü layout çıkartıldı
-- - resimler eklendi 
-- - header & footer eklendi
 - proje eklendi sayfa _boş_
 - - iletişim sayfası eklendi
 - - haberler sayfası eklendi
