@@ -61,7 +61,24 @@ header > hr{
 }
 
 /*------------------------------(main bölümü)------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem; padding-bottom: 2.5rem;
+}
+main > hr{
+    padding-top: 2.5rem; 
+    padding-bottom: 2.5rem;
+    border: 2px yellow;
+}
 
+main > form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 25%;
+}
 
 
 
