@@ -62,22 +62,60 @@ header > hr{
 
 /*------------------------------(main bölümü)------------------------------*/
 main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.788),rgb(49, 49, 49));
+
+}
+/*form sol taraf*/
+main > .left{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 2px solid black;
+}
+
+
+/*form sağ taraf*/
+main > .right{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2.5rem; padding-bottom: 2.5rem;
-}
-main > hr{
-    padding-top: 2.5rem; 
-    padding-bottom: 2.5rem;
-    border: 2px yellow;
+    padding-top: 1rem; padding-bottom: 1rem;
 }
 
-main > form{
+main > .right > form{
+    background-color: rgb(25, 25, 25);
+    filter: drop-shadow(15px 10px 4px #000);
+    width: 100%;
+}
+
+main > .right > article{
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+    padding: 0.5rem;
+    width: 50%;
+    filter: drop-shadow(15px 10px 4px #000);
+}
+
+main > .right > article > hr{
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem;
+    border: 1px solid azure;
+}
+main > .right > article > h4{color: azure; /**/ font-size: 26px;}
+
+main > .right > form{
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
-    width: 25%;
+    max-width: 50%;
+    row-gap: 1.5rem;
+    padding: 1.5rem;
+}
+main > .right > form > input,
+main > .right > form > button{
+    height: 30px;
 }
 
 
