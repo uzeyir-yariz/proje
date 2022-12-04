@@ -63,19 +63,20 @@ header > hr{
 /*------------------------------(main bölümü)------------------------------*/
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.788),rgb(49, 49, 49));
-
+    align-items: center;
 }
 /*form sol taraf*/
-main > .left{
+main > .left > article{
     max-width: 300px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    color: azure;
     border-left: 2px solid black;
+    border-top: 2px solid aqua;
+    margin: auto;
+    padding: 1rem;
 }
-
 
 /*form sağ taraf*/
 main > .right{

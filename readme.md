@@ -3,9 +3,10 @@
 
 ### proje ver 0.8 beta
 
+- iletişim içerik eklendi
 - galeri içerik eklendi
-- haberler eklendi içerikler eklendi
-- hakkımızda kısmı eklendi içerik eklendi
+- haberler içerikler eklendi
+- hakkımızda içerik eklendi
 - haberler içerik eklendi
 - proje eklendi sayfa _boş_
 - - iletişim sayfası eklendi
