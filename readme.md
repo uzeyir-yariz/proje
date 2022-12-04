@@ -9,10 +9,10 @@
 - hakkımızda içerik eklendi
 - haberler içerik eklendi
 - proje eklendi sayfa _boş_
-- - iletişim sayfası eklendi
-- - haberler sayfası eklendi
-- - hakkımızda sayfası eklendi 
-- - galeri sayfası eklendi 
+  - iletişim sayfası eklendi
+  - haberler sayfası eklendi
+  - hakkımızda sayfası eklendi 
+  - galeri sayfası eklendi 
 
 ## proje ver 0.8
 
