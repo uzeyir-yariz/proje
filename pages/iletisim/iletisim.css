@@ -99,7 +99,6 @@ main > .left > article{
     display: flex;
     align-items: center;
     color: azure;
-    
 }
 
 /*form sağ taraf*/
@@ -114,6 +113,7 @@ main > .right{
 main > .right > form{
     background-color: rgb(25, 25, 25);
     filter: drop-shadow(15px 10px 4px #000);
+    row-gap: 1.5rem;
     width: 100%;
 }
 
