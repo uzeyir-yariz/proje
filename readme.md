@@ -1,8 +1,11 @@
 # PROJE
+
 **proje, halen devam etmektedir.**
 
 ### proje ver 0.8 beta
 
+- _küçük güncellemeler yapıldı_
+- icon dosyaları silindi _font ile değiştirildi_
 - iletişim'e resim eklendi
 - iletişim içerik eklendi
 - galeri içerik eklendi
