@@ -3,16 +3,17 @@
 
 ### proje ver 0.8 beta
 
+- iletişim'e resim eklendi
 - iletişim içerik eklendi
 - galeri içerik eklendi
 - haberler içerikler eklendi
 - hakkımızda içerik eklendi
 - haberler içerik eklendi
 - proje eklendi sayfa _boş_
-- - iletişim sayfası eklendi
-- - haberler sayfası eklendi
-- - hakkımızda sayfası eklendi 
-- - galeri sayfası eklendi 
+  - iletişim sayfası eklendi
+  - haberler sayfası eklendi
+  - hakkımızda sayfası eklendi 
+  - galeri sayfası eklendi 
 
 ## proje ver 0.8
 

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 #bug{color: red; text-decoration: overline;}
-a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase;}
+a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; color: azure;}
 p{font-family: 'Quicksand', sans-serif;}
 .hizlimenu > ul > li > a {font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; font-size: 16px;}
 
@@ -20,7 +20,6 @@ body{
 }
 
 /*------------------------------(header bölümü)------------------------------*/
-
 header{
     background-image: url(../../images/tır.jpg);
     background-position: center;
@@ -66,16 +65,41 @@ main{
     grid-template-columns: 1fr 1.5fr;
     background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.788),rgb(49, 49, 49));
     align-items: center;
+    padding-left: 2rem;
 }
+
 /*form sol taraf*/
 main > .left > article{
-    max-width: 300px;
     display: flex;
     color: azure;
-    border-left: 2px solid black;
-    border-top: 2px solid aqua;
-    margin: auto;
+    border-left: 1px solid aquamarine;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 1rem;
+}
+
+/*form sol alt kısmı*/
+.down{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+} 
+
+/*sol taraf*/
+.down-left > img{
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 10px azure);
+    margin-top: 1rem;
+}
+
+/*sağ taraf*/
+.down-right{
+    display: flex;
+    align-items: center;
+    color: azure;
+    
 }
 
 /*form sağ taraf*/
@@ -83,7 +107,8 @@ main > .right{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem; padding-bottom: 1rem;
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
 }
 
 main > .right > form{
