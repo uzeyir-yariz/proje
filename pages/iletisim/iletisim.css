@@ -72,9 +72,9 @@ main{
 main > .left > article{
     display: flex;
     color: azure;
-    border-left: 1px solid aquamarine;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 2px solid aquamarine;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 1rem;
 }
 
@@ -136,7 +136,6 @@ main > .right > form{
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    row-gap: 1.5rem;
     padding: 1.5rem;
 }
 main > .right > form > input,
