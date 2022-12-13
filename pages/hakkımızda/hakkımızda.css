@@ -20,8 +20,58 @@ body{
 }
 
 /*------------------------------(header bölümü)------------------------------*/
+header{
+    background-image: url(../../images/tır.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+header > h1{
+    margin: auto;
+}
 
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(49, 49, 49, 0.788);
+}
 
+a,a:link{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav > a > img{height: auto; width: 80px;}
+
+ul{
+    list-style: none;
+}
+
+nav > ul > li{
+    float: left;
+    margin-right: 1rem;    
+    margin-left: 1rem;    
+}
+
+/*
+@media (min-height: 999px) {
+    nav{
+        background-color: red;
+    }
+}
+
+@media (max-height: 1000px){
+    nav{
+        background-color: black;
+    }
+}
+*/
 
 /*------------------------------(main bölümü)------------------------------*/
 main{

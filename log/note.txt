@@ -1,0 +1,17 @@
+navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 599px) {
+  body {
+    padding-top: 110px;
+  }
+}
