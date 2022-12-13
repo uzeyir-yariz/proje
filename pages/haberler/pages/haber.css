@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 #bug{color: red; text-decoration: overline;}
-a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase;}
+a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; color: azure;}
 p{font-family: 'Quicksand', sans-serif;}
 .hizlimenu > ul > li > a {font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; font-size: 16px;}
 
@@ -13,31 +13,57 @@ p{font-family: 'Quicksand', sans-serif;}
 }
 
 body{
-    background-image: url(../../images/komyonlar.jpg);
+    background-image: url(../../../images/komyonlar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 /*------------------------------(header bölümü)------------------------------*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+    position: sticky;
+    top: 0;
+}
 
+a,a:link{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav > a > img{height: auto; width: 100px;}
 
+ul{
+    list-style: none;
+}
+
+nav > ul > li{
+    float: left;
+    margin-right: 1rem;    
+    margin-left: 1rem;    
+}
+
+header > hr{
+    margin-top: 1rem;
+    opacity: 30%;
+}
 
 /*------------------------------(main bölümü)------------------------------*/
-main{
-    padding: 4rem;
-    background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.863),rgb(49, 49, 49));
-}
-section > img{
-    width: 700px;
-    height: auto;
-    display: flex;
-    margin: auto;
-    padding-bottom: 3rem;
-    
-}
-section > article > h3{font-size: 30px; color: lightblue;}
-section > article > p{margin-top: 1rem; margin-bottom: 1rem; color: lightblue;}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*footer bölümü*/
