@@ -25,9 +25,13 @@ header{
     background-position: center;
     background-size: cover;
     height: 40vh;
+    display: flex;
 }
-header > h1{
-    margin: auto;
+
+header > h2{
+    margin: auto 0 auto 0;
+    color: azure;
+    padding: 4rem;
 }
 
 nav{
@@ -59,6 +63,28 @@ nav > ul > li{
     margin-left: 1rem;    
 }
 
+/*dropdown özelliği bu kısımda*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 15px 30px 30px 10px;
+    z-index: 1;
+    padding: 1rem;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content > a{
+    font-size: 15px;
+}
+.dropdown-content > hr{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 /*
 @media (min-height: 999px) {
     nav{
@@ -77,14 +103,14 @@ nav > ul > li{
 main{
     padding: 4rem;
     background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.863),rgb(49, 49, 49));
-}
-section > img{
-    width: 700px;
-    height: auto;
     display: flex;
-    margin: auto;
-    padding-bottom: 3rem;
-    
+    flex-direction: column;
+}
+
+section > img{
+    width: 80%;
+    padding-bottom: 2rem;    
+    padding-top: 2rem;
 }
 section > article > h3{font-size: 30px; color: lightblue;}
 section > article > p{margin-top: 1rem; margin-bottom: 1rem; color: lightblue;}
