@@ -10,25 +10,29 @@
     <title>hakkımızda</title>
 </head>
 <body>
-    <nav>
+    <nav class="top-nav">
         <a href="index.html"><img src="../../logo.png" alt="sayfa logosu"></a>
         
-        <ul>
-            <li><a href="../../index.html">Ana Sayfa</a></li>
-            <li><a href="../hakkımızda/hakkımızda.html">Hakkımızda</a></li>
-            <li><a href="../galeri/galeri.html">galeri</a></li>
-            <li><a href="../iletisim/iletisim.html">iletişim</a></li>
-            <li><a href="../haberler/haberler.html">haberler</a></li>
-            <li><a href="https://github.com/uzeyir-yariz/proje/issues/5" target="_blank" id="bug">found bug & report</a></li>
-        </ul>
+        <!--yazılar bu bölümde bunlara ekstra sayfalar ekle-->
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+        </label>
+      <ul class="menu">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
     </nav>
 
     <header>
-        <h1>Hakkımızda</h1>
+        
     </header>
     
     <main>
-        
+        <p style="color: azure;"><a href="../../index.html" style="color: orange;"><i class="fa-solid fa-house"></i> ev</a> /  Hakkımızda</p>
         <section>
             <img src="../../images/uçak.jpg" alt="hakkımızda resim">
             <article>
