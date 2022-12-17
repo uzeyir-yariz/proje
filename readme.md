@@ -1,9 +1,12 @@
 # PROJE
 
-**proje, halen devam etmektedir.**
+## **proje, halen devam etmektedir.**
 
 ### proje ver 0.8 beta
 
+- navbar değiştirildi
+  - telefona ıugın hale getirildi
+  - hamburger menü eklendi
 - _küçük güncellemeler yapıldı_
 - icon dosyaları silindi _font ile değiştirildi_
 - iletişim'e resim eklendi
@@ -15,8 +18,8 @@
 - proje eklendi sayfa _boş_
   - iletişim sayfası eklendi
   - haberler sayfası eklendi
-  - hakkımızda sayfası eklendi 
-  - galeri sayfası eklendi 
+  - hakkımızda sayfası eklendi
+  - galeri sayfası eklendi
 
 ## proje ver 0.8
 
@@ -29,8 +32,8 @@
 - _küçük değişiklikler_
 - _css 450 kod satırına çıktık ! ! !_
 - 6 yeni icon eklendi
-- div css yazıldı 
-- footer > div içerik eklendi 
+- div css yazıldı
+- footer > div içerik eklendi
 - footer layout çıkarıldı css eklendi
 - footer eklendi
 
@@ -38,10 +41,10 @@
 
 ### proje ver 0.6 release
 
-- logo değiştirildi 
+- logo değiştirildi
 - bazı hatalar düzeltildi
-- section second mobile uyumlu hale getirildi 
-- bir takım düzeltmeler 
+- section second mobile uyumlu hale getirildi
+- bir takım düzeltmeler
 
 ### proje ver 0.6 beta
 
@@ -52,10 +55,10 @@
 
 ## proje ver 0.6
 
-### proje ver 0.5 release 
+### proje ver 0.5 release
 
-- third section uyum sağlandı 
-- third section iconlar eklendi 
+- third section uyum sağlandı
+- third section iconlar eklendi
 - third section tam ortalandı
 - sayfaya bir logo eklendi
 - fourth 3 resim eklendi 

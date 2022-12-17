@@ -4,7 +4,7 @@
 #bug{color: red; text-decoration: overline;}
 a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase;}
 p{font-family: 'Quicksand', sans-serif;}
-.hizlimenu > ul > li > a {font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; font-size: 16px;}
+a {color: azure; /*--*/ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; font-size: 16px; /*--*/ text-decoration: none;}
 
 *{
     box-sizing: border-box;
@@ -25,80 +25,132 @@ header{
     background-position: center;
     background-size: cover;
     height: 40vh;
-    display: flex;
 }
 
-header > h2{
-    margin: auto 0 auto 0;
+/*hamburger menü(hey, Kim sipariş etti.)*/
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+  align-items: center;
+  height: 10vh;
+}
+.top-nav > a > img{width: 30%;}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu > li > a{
     color: azure;
-    padding: 4rem;
+
 }
 
-nav{
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 100%;
-    position: fixed;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: rgba(49, 49, 49, 0.788);
-}
-
-a,a:link{
-    color: azure;
-    text-decoration: none;
-    font-size: 20px;
-}
-nav > a > img{height: auto; width: 80px;}
-
-ul{
-    list-style: none;
-}
-
-nav > ul > li{
-    float: left;
-    margin-right: 1rem;    
-    margin-left: 1rem;    
-}
-
-/*dropdown özelliği bu kısımda*/
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content{
-    display: none;
+  }
+  .menu {
     position: absolute;
-    background-color: rgb(49, 49, 49);
-    box-shadow: 15px 30px 30px 10px;
-    z-index: 1;
-    padding: 1rem;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
 }
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown-content > a{
-    font-size: 15px;
-}
-.dropdown-content > hr{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/*
-@media (min-height: 999px) {
-    nav{
-        background-color: red;
-    }
-}
-
-@media (max-height: 1000px){
-    nav{
-        background-color: black;
-    }
-}
-*/
-
 /*------------------------------(main bölümü)------------------------------*/
 main{
     padding: 4rem;
