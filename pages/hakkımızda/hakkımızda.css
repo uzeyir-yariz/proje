@@ -21,10 +21,10 @@ body{
 
 /*------------------------------(header bölümü)------------------------------*/
 header{
-    background-image: url(../../images/tır.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
+  background-image: url(../../images/tır.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
 }
 
 /*hamburger menü(hey, Kim sipariş etti.)*/
@@ -35,7 +35,6 @@ header{
   justify-content: space-between;
   background-color: #00BAF0;
   background: linear-gradient(to left, #f46b45, #eea849);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 50px;
   padding: 1em;
@@ -43,6 +42,12 @@ header{
   height: 10vh;
 }
 .top-nav > a > img{width: 30%;}
+
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 .menu {
   display: flex;
