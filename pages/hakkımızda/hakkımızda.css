@@ -200,11 +200,11 @@ footer{
 .galeri{grid-area: gel;}
 .galeri > div{
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 .galeri > div > img{
-  width: 30%;
+  width: 100%;
   height: auto;
 }
 footer > div > hr{
