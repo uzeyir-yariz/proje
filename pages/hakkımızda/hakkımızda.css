@@ -169,90 +169,69 @@ section > article > p{margin-top: 1rem; margin-bottom: 1rem; color: lightblue;}
 
 
 /*footer bölümü*/
+.alt{
+  background-color: red;
+  height: 50px;
+}
+
 footer{
+  display: grid;
+  grid-template-areas: 
+  "hak hiz gel ads"
+  "alt alt alt alt";
+  gap: 3rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background-color: #333;
+  padding-top: 3rem;
+  justify-content: space-around;
+  color: azure;
+}
+.hak{grid-area: hak;}
+.hiz{grid-area: hiz;}
+  .hiz > ul{
+    list-style: none;
+  }
+    .hiz > ul > li{
+      margin-top:    0.5rem;
+      margin-bottom: 0.5rem;  
+    }
+.adres{grid-area: ads;}
+.alt{grid-area: alt;}
+.galeri{grid-area: gel;}
+.galeri > div{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  gap: 1rem;
+}
+.galeri > div > img{
+  width: 30%;
+  height: auto;
+}
+footer > div > hr{
+  opacity: 50%;
+  margin-top: 0.5rem;  
+  margin-bottom: 0.5rem;
+  width: 50%;
+}
+.adres > div{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.adres > div > i{margin-right: 1rem;}
+
+@media (max-width: 800px) {
+  footer{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.788));
-    padding-top: 2rem;
-    
-}
-
-footer > .first{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-    margin: 0rem 6rem 0rem 6rem;
-}
-
-/*---------------------------*/
-footer > .first > .hakkımızda{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .hakkımızda > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-
-/*---------------------------*/
-footer > .first > .hizlimenu{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .hizlimenu > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-footer > .first > .hizlimenu > ul > li{ margin: 0.5rem 0rem 0.5rem 0rem;}
-
-/*---------------------------*/
-footer > .first > .galeri{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .galeri > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-footer > .first > .galeri > div{display: flex; flex-wrap: wrap; gap: 0.2rem; flex: 0 0 90%;}
-footer > .first > .galeri > div > img{width: 4rem; height: 4rem;}
-
-/*---------------------------*/
-footer > .first > .ger{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .ger > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-footer > .first > .ger > div{display: flex; flex-direction: row; align-items: center; margin: 0.5rem 0rem 0.5rem 0rem;}
-footer > .first > .ger > div > article{display: flex; flex-direction: column; margin-left: 1rem;}
-footer > .first > .ger > div > article > h6{font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-size: 14px;}
-footer > .first > .ger > div > img{width: 1.5rem; height: 1.5rem;}
-
-footer > .second{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem 6rem 0rem 6rem;
-    flex-wrap: wrap;
-}
-
-/*alt kısım*/
-footer > .second{
-    padding-bottom: 2rem;
-}
-
-footer > .second > .first{
-    display: flex;
-    flex-direction: column;
-}
-footer > .second > .first > h5{margin-bottom: 0.5rem;}
-footer > .second > .first > div > input{ background-color: black; width: 20rem; height: 120%;}
-footer > .second > .first > div > a{padding: 0.5rem; background-color: rgb(0, 0, 0, 40%); border-radius: 15px;}
-
-/*footer > .second > .second*/
-footer > .second > .second{
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  footer > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 }
-footer > .second > .second > div > a{margin: 0rem 0.5rem 0rem 0.5rem;}
-footer > .second > .second > p{font-size: 16px;}
-footer > .second > .second > p > a{font-size: 20px; color: chartreuse;}
-footer > *{color: azure;}
