@@ -21,10 +21,10 @@ body{
 
 /*------------------------------(header bölümü)------------------------------*/
 header{
-  background-image: url(../../images/tır.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 40vh;
+    background-image: url(../../images/tır.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
 }
 
 /*hamburger menü(hey, Kim sipariş etti.)*/
@@ -40,6 +40,8 @@ header{
   padding: 1em;
   align-items: center;
   height: 10vh;
+  width: 100%;
+  position: fixed;
 }
 .top-nav > a > img{width: 30%;}
 
@@ -116,7 +118,7 @@ nav{
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .menu-button-container {
     display: flex;
   }
@@ -174,3 +176,132 @@ section > article > p{margin-top: 1rem; margin-bottom: 1rem; color: lightblue;}
 
 
 /*footer bölümü*/
+footer{
+  display: grid;
+  grid-template-areas: 
+  "hak hiz gel ads"
+  "alt alt alt alt";
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #333;
+  padding-top: 3rem;
+  justify-content: space-around;
+  color: azure;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.hak{grid-area: hak;}
+.hiz{grid-area: hiz;}
+  .hiz > ul{
+    list-style: none;
+  }
+    .hiz > ul > li{
+      margin-top:    0.5rem;
+      margin-bottom: 0.5rem;  
+    }
+.adres{grid-area: ads;}
+.alt{grid-area: alt;}
+.galeri{grid-area: gel;}
+.galeri > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.galeri > div > img{
+  width: 100px;
+  height: 80px;
+}
+footer > div > hr{
+  opacity: 50%;
+  margin-top: 0.5rem;  
+  margin-bottom: 0.5rem;
+  width: 50%;
+}
+.adres > div{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.adres > div > i{margin-right: 1rem;}
+
+@media (max-width: 1200px) {
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  footer > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .adres{
+    align-items: baseline;
+  }
+
+  .adres > h4,
+  .adres > hr{
+    align-self: center;
+  }
+
+  .hak > p{
+    text-align: center;
+  }
+
+  .alt{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+.alt{
+  border: solid black 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top:    2rem;
+  padding-bottom: 2rem;
+
+  padding-right: 2rem;
+  padding-left:  2rem;
+}
+
+.alt > .first > div > input{
+  background-color: azure;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  padding: 0.5rem;
+}
+
+#kayit{
+  background-color: #f46b45;
+  border-radius: 7px;
+}
+
+
+.alt > .second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt > .second > hr{
+  width: 100%;
+  margin-top:    0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-top: 1px dashed azure;
+  opacity: 50%;
+}
+
+#ico{
+  display: flex;
+  gap: 0.5rem;
+}
+
