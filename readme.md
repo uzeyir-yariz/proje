@@ -4,7 +4,10 @@
 
 ### proje ver 0.8 beta
 
+- footer değiştirildi 
+  - telefona uyumlu hale getirildi
 - navbar değiştirildi
+  - hamburger menü daha iyi hale geldi
   - telefona ıugın hale getirildi
   - hamburger menü eklendi
 - _küçük güncellemeler yapıldı_
