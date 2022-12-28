@@ -81,7 +81,7 @@ header{
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: azure;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -120,7 +120,7 @@ header{
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 90px;
     left: 0;
     flex-direction: column;
     width: 100%;
