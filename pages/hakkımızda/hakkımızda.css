@@ -35,7 +35,6 @@ header{
   justify-content: space-between;
   background-color: #00BAF0;
   background: linear-gradient(to left, #f46b45, #eea849);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 50px;
   padding: 1em;
@@ -45,6 +44,12 @@ header{
   position: fixed;
 }
 .top-nav > a > img{width: 30%;}
+
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 .menu {
   display: flex;
@@ -171,7 +176,6 @@ section > article > p{margin-top: 1rem; margin-bottom: 1rem; color: lightblue;}
 
 
 /*footer bölümü*/
-
 footer{
   display: grid;
   grid-template-areas: 
