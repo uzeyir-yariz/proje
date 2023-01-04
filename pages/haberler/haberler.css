@@ -24,7 +24,7 @@ header{
     background-image: url(../../images/tır.jpg);
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
 }
 
 /*hamburger menü(hey, Kim sipariş etti.)*/
@@ -32,6 +32,7 @@ header{
 
 nav {
 	background: #212121;
+	opacity: 95%;
 	font-size: 22px;
 	line-height: 32px;
 	color: #ffffff;
