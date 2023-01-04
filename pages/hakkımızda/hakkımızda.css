@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-#bug{color: red; text-decoration: overline;}
 a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase;}
 p{font-family: 'Quicksand', sans-serif;}
 a {color: azure; /*--*/ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; font-size: 16px; /*--*/ text-decoration: none;}
@@ -28,28 +27,27 @@ header{
 }
 
 /*hamburger menü(hey, Kim sipariş etti.)*/
-/* CSS Document */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
 
 nav {
 	background: #212121;
-	font-size:22px;
+	font-size: 22px;
 	line-height: 32px;
 	color: #ffffff;
-	margin: 0;
-	padding: 0;
 	word-wrap:break-word !important;
 	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
+	justify-content: space-around;
 }
 
 
 #container {
+
 	margin: 0 auto;
 	max-width: 890px;
 }
@@ -59,17 +57,14 @@ nav {
 	display: none;
 }
 
-/* Giving a background-color to the nav container. */
 nav { 
 	margin:0;
 	padding: 0;
 }
 
 #logo {
-	display: block;
-	padding: 0 30px;
+	padding: 1rem 0.5rem;
 	float: left;
-	font-size:20px;
 	line-height: 60px;
 }
 
@@ -145,16 +140,19 @@ li > a:only-child:after { content: ''; }
 
 	#logo {
 		display: block;
-		padding: 0;
+		padding: 0.5rem 0.5rem;
 		width: 100%;
 		text-align: center;
 		float: none;
 	}
 
 	nav {
+		display: flex;
+		flex-direction: column;
 		margin: auto;
-    text-transform: uppercase;  
-    text-align: center;
+		width: 100%;
+    	text-transform: uppercase;  
+    	text-align: center;
 	}
 
 	/* Hide the navigation menu by default */
@@ -162,6 +160,7 @@ li > a:only-child:after { content: ''; }
 	.toggle + a,
 	.menu {
 		display: none;
+		width: 100%;
 	}
 
 	/* Stylinf the toggle lable */
@@ -169,6 +168,7 @@ li > a:only-child:after { content: ''; }
 		display: block;
 		background-color: rgb(19, 18, 18);
 		padding:14px 20px;	
+		width: 100%;
 		color:#FFF;
 		font-size:17px;
 		text-decoration:none;
@@ -223,7 +223,6 @@ li > a:only-child:after { content: ''; }
 		float: none;
 		position:static;
 		color: #ffffff;
-		/* has to be the same number as the "line-height" of "nav a" */
 	}
 		
 	/* Hide menus on hover */
@@ -240,7 +239,6 @@ li > a:only-child:after { content: ''; }
 
 	nav ul ul ul li {
 		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
 
 	}
 
@@ -263,7 +261,7 @@ main{
 }
 
 section > img{
-    width: 80%;
+    width: 50%;
     padding-bottom: 2rem;    
     padding-top: 2rem;
 }

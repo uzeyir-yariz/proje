@@ -10,21 +10,67 @@
     <title>haberler</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="../../logo.png" alt="sayfa logosu"></a>
-            
-            <ul>
-                <li><a href="../../index.html">Ana Sayfa</a></li>
-                <li><a href="../hakkımızda/hakkımızda.html">Hakkımızda</a></li>
-                <li><a href="../galeri/galeri.html">galeri</a></li>
-                <li><a href="../iletisim/iletisim.html">iletişim</a></li>
+    <nav>
+        <img id="logo" src="../../logo.png" style="max-width: 100px; min-width: 50px;" alt="">
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle"> hakkımızda +</label>
+                    <a href="../hakkımızda/hakkımızda.html">hakkımızda</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="#">misyonumuz</a></li>
+                        <li><a href="#">vizyonumuz</a></li>
+                        <li><a href="#">hakkımızda</a></li>
+                    </ul> 
+                </li>
+
+                <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">hizmetlerimiz +</label>
+                <a href="#">hizmetlerimiz</a>
+                
+                
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="#">mimarlık</a></li>
+                    <li><a href="#">danışmanlık</a></li>
+                    <li><a href="#">marka patent</a></li>
+                    <li><a href="#">tasarım </a></li>
+
+                    <!-- Second Tier Drop Down 
+                        <li>
+                            <label for="drop-3" class="toggle">Tutorials +</label>
+                            <a href="#">Tutorials</a>         
+                            <input type="checkbox" id="drop-3"/>
+                            
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+                        </li>
+                    -->        
+                </ul>
                 <li><a href="../haberler/haberler.html">haberler</a></li>
-                <li><a href="https://github.com/uzeyir-yariz/proje/issues/5" target="_blank" id="bug">found bug & report</a></li>
+                <li><a href="#">ekibimiz</a></li>
+
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-3" class="toggle"> galeri +</label>
+                    <a href="../galeri/galeri.html">galeri</a>
+                    <input type="checkbox" id="drop-3"/>
+                    <ul>
+                        <li><a href="../galeri/galeri.html">resim galeri</a></li>
+                        <li><a href="#">video galeri</a></li>
+                    </ul> 
+                </li>
+                <li><a href="../iletisim/iletisim.html">iletişim</a></li>
             </ul>
         </nav>
-        <hr>
-    </header>
 
     <main>
         <section>
@@ -95,90 +141,84 @@
     </main>
     <hr>
     <footer>
-        <!--üst kısım-->
-        <div class="first">
-            
-            <div class="hakkımızda">
-                <h5>Hakkımızda</h5>
-                <hr>
-                <p>burada çok önemli şeyler yazdığını hayal edin . . . Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel non, dicta ex voluptate sequi pariatur.</p>
-            </div>
-
-            <div class="hizlimenu">
-                <h5>Hızlı Menu</h5>
-                <hr>
-                <ul>
-                    <li><a href="../../index.html">> ana sayfa</a></li>
-                    <li><a href="../galeri/galeri.html">> galeri</a></li>
-                    <li><a href="../hakkımızda/hakkımızda.html">> hakkımızda</a></li>
-                    <li><a href="../iletisim/iletisim.html">> iletişim</a></li>
-                    <li><a href="../haberler/haberler.html">> haberler</a></li>
-                </ul>
-            </div>
-
-            <div class="galeri">
-                <h5>Galeri</h5>
+        <div class="hak">
+            <h4>Hakkımızda</h4>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, tempore animi aliquid ab quos eos unde? Voluptate ullam provident nesciunt tenetur suscipit, hic, reiciendis iusto autem ipsum ut, repellendus veniam?</p>  
+        </div>
+        <!--ayrım-->
+        <div class="hiz">
+            <h4>Hızlı Menü</h4>
+            <hr>
+            <ul>
+                <li><a href="../hakkımızda/hakkımızda.html">> hakkımızda</a></li>
+                <li><a href="../galeri/galeri.html">> galeri</a></li>
+                <li><a href="../haberler/haberler.html">> haberler</a></li>
+                <li><a href="../iletisim/iletisim.html">> iletişim</a></li>
+            </ul>
+        </div>
+        <!--ayrım-->
+        <div class="galeri">
+            <h5>Galeri</h5>
                 <hr>
                 <div>
                     <img src="../../images/gemi.jpg" alt="resim">
                     <img src="../../images/kamyon.jpg" alt="resim">
                     <img src="../../images/komyonlar.jpg" alt="resim">
-                    <img src="../../images/sayfa kamyon logosu.png.png" alt="resim">
+                    <img src="../../images/komyonlar.jpg" alt="resim">
                     <img src="../../images/tren.jpg" alt="resim">
                     <img src="../../images/tır.jpg" alt="resim">
                     <img src="../../images/uçak.jpg" alt="resim">
                     <img src="../../images/gemi.jpg" alt="resim">
                     <img src="../../images/komyonlar.jpg" alt="resim">
                 </div>
+        </div>
+        <!--ayrım-->
+        <div class="adres">
+            <h4>Adres</h4>
+            <hr>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <article>
+                    <h6>adres</h6>
+                    <p>başakşehir</p>
+                </article>
             </div>
-            
-            <div class="ger">
-                <h5>Geribildirim</h5>
-                <hr>
-                
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <article>
-                        <h6>adres</h6>
-                        <p>başakşehir</p>
-                    </article>
-                </div>
 
-                <div>
-                    <i class="fa-solid fa-phone"></i>
-                    <article>
-                        <h6>telefon</h6>
-                        <p>000000000000</p>
-                    </article>
-                </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <article>
+                    <h6>telefon</h6>
+                    <p>000000000000</p>
+                </article>
+            </div>
 
-                <div>
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <article>
-                        <h6>cep</h6>
-                        <p>000000000000</p>
-                    </article>
-                </div>
-
+            <div>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <article>
+                    <h6>cep</h6>
+                    <p>000000000000</p>
+                </article>
             </div>
         </div>
-
-        <!--alt kısım-->
-        <div class="second">
+        <!--ayrım(bu ayrım 3. yani aşşağıda olucak)-->
+        <div class="alt">
             <div class="first">
-                <h5>github proje ekibi</h5>
+                <h4>katıl</h4>
                 <div>
-                    <input type="email" name="giriş" placeholder="e-postanızı yazın..." id="mail">
-                    <a href="#">katıl</a>
+                    <input type="email" placeholder="e-posta adresiniz" id="tex">
+                    <input type="button" value="Kayıt ol" id="kayit">
                 </div>
             </div>
-
+            
             <div class="second">
-                <div class="ico"> 
-                    <a href="https://replit.com/@ZEYRYARIZ" target="_blank"><i class="fa-solid fa-yin-yang"></i></a>  
-                    <a href="https://github.com/uzeyir-yariz" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                <div id="ico">
+                    <a href="#"><i class="fa-2x fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-instagram"></i></a>
                 </div>
-                <p>copyright <a href="https://github.com/uzeyir-yariz" target="_blank">uzeyir-yariz</a></p>
+                <hr>
+                <p>copyright <a href="" style="color: chartreuse;">uzeyir-yariz</a></p>
             </div>
         </div>
     </footer>

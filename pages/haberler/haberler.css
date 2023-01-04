@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-#bug{color: red; text-decoration: overline;}
 a, h1, h2, h3, h4, h5{ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase;}
 p{font-family: 'Quicksand', sans-serif;}
-.hizlimenu > ul > li > a {font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; font-size: 16px;}
+a {color: azure; /*--*/ font-family: 'Open Sans', sans-serif; /*--*/ text-transform: uppercase; font-size: 16px; /*--*/ text-decoration: none;}
+
 
 *{
     box-sizing: border-box;
@@ -20,46 +20,239 @@ body{
 }
 
 /*------------------------------(header bölümü)------------------------------*/
-
 header{
     background-image: url(../../images/tır.jpg);
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 1rem;
-    position: sticky;
-    top: 0;
+/*hamburger menü(hey, Kim sipariş etti.)*/
+
+
+nav {
+	background: #212121;
+	font-size: 22px;
+	line-height: 32px;
+	color: #ffffff;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	justify-content: space-around;
 }
 
-a,a:link{
-    color: azure;
-    text-decoration: none;
-    font-size: 20px;
-}
-nav > a > img{height: auto; width: 100px;}
 
-ul{
-    list-style: none;
+#container {
+
+	margin: 0 auto;
+	max-width: 890px;
 }
 
-nav > ul > li{
-    float: left;
-    margin-right: 1rem;    
-    margin-left: 1rem;    
+.toggle,
+[id^=drop] {
+	display: none;
 }
 
-header > hr{
-    margin-top: 1rem;
-    opacity: 30%;
+nav { 
+	margin:0;
+	padding: 0;
 }
 
+#logo {
+	padding: 1rem 0.5rem;
+	float: left;
+	line-height: 60px;
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+}
+
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+	background-color: #212121;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
+}
+	
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px; 
+}
+
+	
+li > a:after { content:  ' | '; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0.5rem 0.5rem;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		width: 100%;
+    	text-transform: uppercase;  
+    	text-align: center;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+		width: 100%;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: rgb(19, 18, 18);
+		padding:14px 20px;	
+		width: 100%;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #1a1414;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #302222;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #1d1919; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
 /*------------------------------(main bölümü)------------------------------*/
 main{
     background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.863),rgb(49, 49, 49));
@@ -111,89 +304,132 @@ main > section{
 
 /*footer bölümü*/
 footer{
+    display: grid;
+    grid-template-areas: 
+    "hak hiz gel ads"
+    "alt alt alt alt";
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #333;
+    padding-top: 3rem;
+    justify-content: space-around;
+    color: azure;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .hak{grid-area: hak;}
+  .hiz{grid-area: hiz;}
+    .hiz > ul{
+      list-style: none;
+    }
+      .hiz > ul > li{
+        margin-top:    0.5rem;
+        margin-bottom: 0.5rem;  
+      }
+  .adres{grid-area: ads;}
+  .alt{grid-area: alt;}
+  .galeri{grid-area: gel;}
+  .galeri > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .galeri > div > img{
+    width: 100px;
+    height: 80px;
+  }
+  footer > div > hr{
+    opacity: 50%;
+    margin-top: 0.5rem;  
+    margin-bottom: 0.5rem;
+    width: 50%;
+  }
+  .adres > div{
     display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.788));
-    padding-top: 2rem;
-    
-}
-
-footer > .first{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-    margin: 0rem 6rem 0rem 6rem;
-}
-
-/*---------------------------*/
-footer > .first > .hakkımızda{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .hakkımızda > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-
-/*---------------------------*/
-footer > .first > .hizlimenu{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .hizlimenu > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-footer > .first > .hizlimenu > ul > li{ margin: 0.5rem 0rem 0.5rem 0rem;}
-
-/*---------------------------*/
-footer > .first > .galeri{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .galeri > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-footer > .first > .galeri > div{display: flex; flex-wrap: wrap; gap: 0.2rem; flex: 0 0 90%;}
-footer > .first > .galeri > div > img{width: 4rem; height: 4rem;}
-
-/*---------------------------*/
-footer > .first > .ger{
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 200px;
-}
-footer > .first > .ger > hr{margin: 0.5rem 0rem 0.5rem 0rem; width: 25%;}
-footer > .first > .ger > div{display: flex; flex-direction: row; align-items: center; margin: 0.5rem 0rem 0.5rem 0rem;}
-footer > .first > .ger > div > article{display: flex; flex-direction: column; margin-left: 1rem;}
-footer > .first > .ger > div > article > h6{font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-size: 14px;}
-footer > .first > .ger > div > img{width: 1.5rem; height: 1.5rem;}
-
-footer > .second{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem 6rem 0rem 6rem;
-    flex-wrap: wrap;
-}
-
-/*alt kısım*/
-footer > .second{
-    padding-bottom: 2rem;
-}
-
-footer > .second > .first{
-    display: flex;
-    flex-direction: column;
-}
-footer > .second > .first > h5{margin-bottom: 0.5rem;}
-footer > .second > .first > div > input{ background-color: black; width: 20rem; height: 120%;}
-footer > .second > .first > div > a{padding: 0.5rem; background-color: rgb(0, 0, 0, 40%); border-radius: 15px;}
-
-/*footer > .second > .second*/
-footer > .second > .second{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-footer > .second > .second > div > a{margin: 0rem 0.5rem 0rem 0.5rem;}
-footer > .second > .second > p{font-size: 16px;}
-footer > .second > .second > p > a{font-size: 20px; color: chartreuse;}
-footer > *{color: azure;}
+    font-size: 18px;
+  }
+  .adres > div > i{margin-right: 1rem;}
+  
+  @media (max-width: 1200px) {
+    footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    footer > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .adres{
+      align-items: baseline;
+    }
+  
+    .adres > h4,
+    .adres > hr{
+      align-self: center;
+    }
+  
+    .hak > p{
+      text-align: center;
+    }
+  
+    .alt{
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+  
+  .alt{
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:    2rem;
+    padding-bottom: 2rem;
+  
+    padding-right: 2rem;
+    padding-left:  2rem;
+  }
+  
+  .alt > .first > div > input{
+    background-color: azure;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    padding: 0.5rem;
+  }
+  
+  #kayit{
+    background-color: #f46b45;
+    border-radius: 7px;
+  }
+  
+  
+  .alt > .second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .alt > .second > hr{
+    width: 100%;
+    margin-top:    0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-top: 1px dashed azure;
+    opacity: 50%;
+  }
+  
+  #ico{
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  
