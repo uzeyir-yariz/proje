@@ -115,3 +115,143 @@ header{
         margin-left: 1rem;    
     }
 }
+
+form{
+    css{
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            background-image: linear-gradient(rgb(49, 49, 49),rgba(49, 49, 49, 0.788),rgb(49, 49, 49));
+            align-items: center;
+            padding-left: 2rem;
+        }
+
+        /*form sol taraf*/
+        main > .left > article{
+            display: flex;
+            color: azure;
+            border-left: 2px solid aquamarine;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 1rem;
+        }
+
+        /*form sol alt kısmı*/
+        .down{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 2rem;
+        } 
+
+        /*sol taraf*/
+        .down-left > img{
+            width: 200px;
+            height: auto;
+            border-radius: 15px;
+            filter: drop-shadow(0px 0px 10px azure);
+            margin-top: 1rem;
+        }
+
+        /*sağ taraf*/
+        .down-right{
+            display: flex;
+            align-items: center;
+            color: azure;
+        }
+
+        /*form sağ taraf*/
+        main > .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1rem; 
+            padding-bottom: 1rem;
+        }
+
+        main > .right > form{
+            background-color: rgb(25, 25, 25);
+            filter: drop-shadow(15px 10px 4px #000);
+            row-gap: 1.5rem;
+            width: 100%;
+        }
+
+        main > .right > article{
+            background-color: rgb(25, 25, 25);
+            text-align: center;
+            padding: 0.5rem;
+            width: 50%;
+            filter: drop-shadow(15px 10px 4px #000);
+        }
+
+        main > .right > article > hr{
+            margin-top: 0.5rem; 
+            margin-bottom: 0.5rem;
+            border: 1px solid azure;
+        }
+        main > .right > article > h4{color: azure; /**/ font-size: 26px;}
+
+        main > .right > form{
+            display: flex;
+            flex-direction: column;
+            max-width: 50%;
+            padding: 1.5rem;
+        }
+        main > .right > form > input,
+        main > .right > form > button{
+            height: 30px;
+        }
+
+        @media (max-width: 1000px) {
+            main{
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    }
+
+    html{
+        <main>
+        <!--form sol taraf-->
+        <section class="left">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quisquam molestias suscipit veritatis quidem voluptatibus aliquam vel. Libero, veritatis corrupti. Libero repellat incidunt odit adipisci deleniti esse quas magnam sed.</p>
+            </article>
+
+            <section class="down">
+                <article class="down-left">
+                    <h5>Merkez İletişim</h5>
+                    <img src="../../images/Istanbul.jpg" alt="Istanbul">
+                </article>
+
+                <article class="down-right">
+                    <!--her birinin özel bir ikon gelmeli-->
+                    <!--TODO: #17 her birine özel bir ikon gelmeli font awsome kullanabirim -->
+                    <ul>
+                        <li> ...mahellesi, ...sokkak no:00 / 00 İstanbul / Türkiye</li>
+                        <li>0000 0000 0000 0000</li>
+                        <li>0005 0000 0000 0000</li>
+                        <li>proje@proje.com</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <!--form sağ taraf-->
+        <section class="right">
+            <article>
+                <h4>İletişim Formu</h4>
+                <hr>
+            </article>
+            <form action="">
+                <input type="text" placeholder="adınız. . ." required name="ad" id="ad">
+                <input type="number" placeholder="telefon. . ." required name="tel" id="tel">
+                <input type="email" placeholder="email. . ." required name="email" id="email">
+                <input type="text" placeholder="konu. . ." required name="konu" id="konu">
+                <textarea name="text-area" id="text-area" required placeholder="lütfen mesaj yazın" rows="10"></textarea>
+                <button name="submit" type="submit" id="submit">Gönder</button>
+            </form>
+        </section>
+    </main>
+    }
+}
