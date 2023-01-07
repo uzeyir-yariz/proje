@@ -12,7 +12,7 @@ a {color: azure; /*--*/ font-family: 'Open Sans', sans-serif; /*--*/ text-transf
 }
 
 body{
-    background-image: url(../../images/komyonlar.jpg);
+    background-image: url(../../../images/komyonlar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ body{
 
 /*------------------------------(header bölümü)------------------------------*/
 header{
-    background-image: url(../../images/tır.jpg);
+    background-image: url(../../../images/tır.jpg);
     background-position: center;
     background-size: cover;
     height: 70vh;

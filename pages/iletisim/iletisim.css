@@ -95,6 +95,7 @@ nav a {
 	color:#FFF;
 	font-size:17px;
 	text-decoration:none;
+  transition: 500ms;
 	background-color: #212121;
 }
 
@@ -355,13 +356,32 @@ main > .right > form > button{
     }
 
     .right{
+      padding-top:    5rem;
+      padding-bottom: 5rem;
+      width: 100%;
+    }
+    
+    .right > form{
       width: 100%;
     }
 
     .left{
-      width: 90%;
+      padding-top:    5rem;
+      padding-bottom: 5rem;
+      width: 100%;
     }
 
+    .left > .down{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .down-right{
+      padding-top:    5rem;
+      padding-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 

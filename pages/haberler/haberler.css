@@ -96,6 +96,7 @@ nav a {
 	color:#FFF;
 	font-size:17px;
 	text-decoration:none;
+  transition: 500ms;
 	background-color: #212121;
 }
 
